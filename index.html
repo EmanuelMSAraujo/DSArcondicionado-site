@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClimaConforto - Soluções em Ar Condicionado</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #E0F7FA;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Roboto', sans-serif;
+      color: #0077B6;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0077B6;
+    }
+
+    /* Header */
+    header {
+      background-color: #0077B6;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header nav a {
+      color: #fff;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    .btn {
+      background-color: #0077B6;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background-color: #005f8a;
+    }
+
+    /* Banner */
+    .banner {
+      background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .banner h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .banner p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    /* Sobre Nós */
+    .sobre-nos {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .sobre-nos img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    /* Orçamentos */
+    .orcamentos {
+      padding: 50px 20px;
+      background-color: #F5F5F5;
+      text-align: center;
+    }
+
+    .orcamentos form {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .orcamentos input, .orcamentos select, .orcamentos textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .orcamentos button {
+      background-color: #0077B6;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .orcamentos button:hover {
+      background-color: #005f8a;
+    }
+
+    /* Contato */
+    .contato {
+      padding: 50px 20px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .contato-info {
+      margin-bottom: 20px;
+    }
+
+    .contato form {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .contato input, .contato textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contato button {
+      background-color: #0077B6;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contato button:hover {
+      background-color: #005f8a;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0077B6;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer a {
+      color: #fff;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>ClimaConforto</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#orcamentos">Orçamentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner" id="home">
+    <h1>Conforto e Frescor em Cada Canto da Sua Casa</h1>
+    <p>Instalação, Manutenção e Desinstalação de Ar Condicionado com Qualidade e Garantia.</p>
+    <a href="#orcamentos" class="btn">Solicite um Orçamento Agora</a>
+  </section>
+
+  <!-- Sobre Nós -->
+  <section class="sobre-nos" id="sobre">
+    <h2>Quem Somos</h2>
+    <p>Somos uma empresa especializada em soluções de climatização para residências. Com anos de experiência, nossa missão é garantir o máximo conforto e bem-estar para sua família.</p>
+    <img src="https://via.placeholder.com/800x400" alt="Técnicos trabalhando">
+  </section>
+
+  <!-- Orçamentos -->
+  <section class="orcamentos" id="orcamentos">
+    <h2>Solicite um Orçamento</h2>
+    <form id="formOrcamento">
+      <input type="text" name="nome" placeholder="Nome Completo" required>
+      <input type="email" name="email" placeholder="E-mail" required>
+      <input type="tel" name="telefone" placeholder="Telefone" required>
+      <select name="servico" required>
+        <option value="">Selecione o Serviço</option>
+        <option value="instalacao">Instalação</option>
+        <option value="manutencao">Manutenção</option>
+        <option value="desinstalacao">Desinstalação</option>
+      </select>
+      <textarea name="descricao" placeholder="Descreva o serviço desejado" rows="5" required></textarea>
+      <button type="submit">Enviar Solicitação</button>
+    </form>
+  </section>
+
+  <!-- Contato -->
+  <section class="contato" id="contato">
+    <h2>Fale Conosco</h2>
+    <div class="contato-info">
+      <p>Telefone: (XX) XXXX-XXXX</p>
+      <p>E-mail: contato@climaconforto.com</p>
+      <p>Endereço: Rua Exemplo, 123, Bairro, Cidade - Estado</p>
+    </div>
+    <form id="formContato">
+      <input type="text" name="nome" placeholder="Nome" required>
+      <input type="email" name="email" placeholder="E-mail" required>
+      <textarea name="mensagem" placeholder="Mensagem" rows="5" required></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2023 ClimaConforto. Todos os direitos reservados.</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#orcamentos">Orçamentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">WhatsApp</a>
+    </div>
+  </footer>
+
+  <script>
+    // Simulação de envio de formulários
+    document.getElementById('formOrcamento').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Solicitação de orçamento enviada com sucesso!');
+    });
+
+    document.getElementById('formContato').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Mensagem enviada com sucesso!');
+    });
+  </script>
+</body>
+</html>
